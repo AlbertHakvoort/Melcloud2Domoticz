@@ -9,7 +9,7 @@ curl
 -> apt-get install curl
 
 json 
--> apt-get install npm 
+-> apt-get install npm
 -> npm install -g json
 -> ln -s /usr/bin/nodejs /usr/bin/node
 
@@ -21,3 +21,25 @@ wget https://raw.githubusercontent.com/AlbertHakvoort/Melcloud2Domoticz/master/m
 
 chmod +x melcloud2domoticz.sh
 
+Add the following dummy devices in Domoticz
+
+5x dummy Temperature sensor
+
+OUTDOORTEMP
+ROOMTEMP
+HEATFLOW
+SWWTEMP
+SWWSETPOINT
+
+1x dummy Thermostat
+
+SETPOINT
+
+1x dummy Text
+
+OPMODEZ1
+
+2x dummy Switch
+
+WPACTIVE
+WPERROR
