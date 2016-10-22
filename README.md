@@ -43,3 +43,5 @@ OPMODEZ1
 
 WPACTIVE
 WPERROR
+
+Edit melcloud2domoticz.sh with the IDX
