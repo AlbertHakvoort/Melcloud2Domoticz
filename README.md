@@ -21,7 +21,7 @@ wget https://raw.githubusercontent.com/AlbertHakvoort/Melcloud2Domoticz/master/m
 
 chmod +x melcloud2domoticz.sh
 
-Add the following dummy devices in Domoticz
+Add the following dummy devices in Domoticz:
 
 5x dummy Temperature sensor
 
