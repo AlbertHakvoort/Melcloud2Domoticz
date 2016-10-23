@@ -169,7 +169,7 @@ chmod +x $FOLDER/temp.sh
 
 DATA=`$FOLDER/temp.sh`
 
-LOGINCHECK=`echo $DATA | grep Success | cut -d: -f2 | cut -d, -f1`
+LOGINCHECK=`echo $DATA |  $GREP Success | cut -d: -f2 | cut -d, -f1`
 
 if [[ $LOGINCHECK == "false" ]]; then
 	echo "Login KEY is wrong or expired. Auto removing the settings.ini, so the credentials will be renewed. If still not working check username and password!"
