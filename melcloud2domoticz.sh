@@ -2,7 +2,7 @@
 
 ## Ecodan Domoticz plugin
 ## version 0.6
-## (c) albert @ hakvoort . co
+## (c) albert [at] hakvoort [dot] co
 
 ## This version is only suitable for 1 device/building !!
 
