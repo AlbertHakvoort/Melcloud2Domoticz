@@ -1,4 +1,4 @@
-# Melcloud
+# Melcloud2Domoticz
 Tool for extracting data from Melcloud to Domoticz
 
 Installation guide based on Debian
@@ -10,7 +10,9 @@ curl
 
 json 
 -> apt-get install npm
+
 -> npm install -g json
+
 -> ln -s /usr/bin/nodejs /usr/bin/node
 
 mkdir -p /var/bin/melcloud
