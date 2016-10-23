@@ -6,9 +6,11 @@ Installation guide based on Debian
 Requirements :
 
 curl
+
 -> apt-get install curl
 
 json 
+
 -> apt-get install npm
 
 -> npm install -g json
