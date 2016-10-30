@@ -32,15 +32,11 @@ chmod +x melcloud2domoticz.sh
 
 
 
-3) Add the following dummy devices in Domoticz:
+3) Add the following dummy devices in Domoticz :
 
 ## Create 5x dummy Temperature sensor
 
-IDXOUTDOORTEMP
-IDXROOMTEMP
-IDXHEATFLOW 
-IDXSWWTEMP
-IDXSWWSETPOINT
+IDXOUTDOORTEMP | IDXROOMTEMP | IDXHEATFLOW | IDXSWWTEMP | IDXSWWSETPOINT
 
 ## Create 1x dummy Thermostat
 
@@ -53,8 +49,11 @@ IDXWPSTATUS (Shows the current status of the Unit Heating/SWW etc)
 ## Create 3x dummy Switch
 
 IDXWPACTIVE (Is the unit running or not, can be used for scripts etc)
+
 IDXWPERROR (Has the unit a error)
-IDXWPPOWER (Is the Unit on or off
+
+IDXWPPOWER (Is the Unit on or off)
+
 
 ## Create 1x Dummy Level selector
 
