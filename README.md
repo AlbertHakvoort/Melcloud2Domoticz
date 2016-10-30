@@ -83,7 +83,6 @@ Select "hide off level" and add the following levels:
 
 /var/bin/melcloud/melcloud2domoticz.sh
 
-
 6) If everything works fine add a job to the crontab
 
 crontab -e
