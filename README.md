@@ -15,7 +15,8 @@ json
 
 -> npm install -g json
 
-# if you get a error about already exist, don't bother it ;)
+(some distro's dont have the right link to nodejs)
+
 -> ln -s /usr/bin/nodejs /usr/bin/node
 
 
