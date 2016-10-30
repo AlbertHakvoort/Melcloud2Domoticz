@@ -3,7 +3,7 @@ Tool for extracting data from Melcloud to Domoticz
 
 Installation guide based on Debian
 
-1) Requirements :
+## 1) Requirements :
 
 curl
 
@@ -20,7 +20,7 @@ json
 -> ln -s /usr/bin/nodejs /usr/bin/node
 
 
-2) Create folder and download script
+## 2) Create folder and download script
 
 mkdir -p /var/bin/melcloud
 
@@ -32,7 +32,7 @@ chmod +x melcloud2domoticz.sh
 
 
 
-3) Add the following dummy devices in Domoticz :
+## 3) Add the following dummy devices in Domoticz :
 
 ## Create 5x dummy Temperature sensor
 
@@ -69,7 +69,7 @@ Select "hide off level" and add the following levels:
 60	Cooling-WDC
 
 
-4) Edit melcloud2domoticz.sh and fill in : 
+## 4) Edit melcloud2domoticz.sh and fill in : 
 
 -> the IDX's to the corresponding devices 
 
@@ -78,11 +78,11 @@ Select "hide off level" and add the following levels:
 -> Domoticz server ip and port
 
 
-5) Start the script and check the output of it. Then check of the devices in Domoticz are updated.
+## 5) Start the script and check the output of it. Then check of the devices in Domoticz are updated.
 
 /var/bin/melcloud/melcloud2domoticz.sh
 
-6) If everything works fine add a job to the crontab
+## 6) If everything works fine add a job to the crontab
 
 crontab -e
 
