@@ -86,5 +86,5 @@ Select "hide off level" and add the following levels:
 
 crontab -e
 
-  * * * * *   /var/bin/melcloud/melcloud2domoticz.sh
+  */1 * * * *   /var/bin/melcloud/melcloud2domoticz.sh
   
