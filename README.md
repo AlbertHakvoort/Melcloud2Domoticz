@@ -7,14 +7,15 @@ Installation guide based on Debian
 
 curl
 
--> apt-get install curl
+-> sudo apt-get install curl
 
 json 
 
--> apt-get install npm
+-> sudo apt-get update && apt-get install npm
 
 -> npm install -g json
 
+# if you get a error about already exist, don't bother it ;)
 -> ln -s /usr/bin/nodejs /usr/bin/node
 
 
