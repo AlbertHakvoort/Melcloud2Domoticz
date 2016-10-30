@@ -7,11 +7,11 @@ Installation guide based on Debian
 
 curl
 
--> sudo apt-get install curl
+-> sudo apt-get update && apt-get install curl
 
 json 
 
--> sudo apt-get update && apt-get install npm
+-> sudo apt-get install npm
 
 -> npm install -g json
 
@@ -33,21 +33,40 @@ chmod +x melcloud2domoticz.sh
 
 3) Add the following dummy devices in Domoticz:
 
-5x dummy Temperature sensor
+## Create 5x dummy Temperature sensor
 
-OUTDOORTEMP | ROOMTEMP | HEATFLOW | SWWTEMP | SWWSETPOINT
+IDXOUTDOORTEMP
+IDXROOMTEMP
+IDXHEATFLOW 
+IDXSWWTEMP
+IDXSWWSETPOINT
 
-1x dummy Thermostat
+## Create 1x dummy Thermostat
 
-SETPOINT
+IDXSETPOINT (Setpoint of the thermostat)
 
-1x dummy Text
+## Create 1x dummy Text
 
-OPMODEZ1
+IDXWPSTATUS (Shows the current status of the Unit Heating/SWW etc)
 
-2x dummy Switch
+## Create 3x dummy Switch
 
-WPACTIVE | WPERROR
+IDXWPACTIVE (Is the unit running or not, can be used for scripts etc)
+IDXWPERROR (Has the unit a error)
+IDXWPPOWER (Is the Unit on or off
+
+## Create 1x Dummy Level selector
+
+IDXWPMODE (change heat/cooling or thermostat/wdc)
+
+Select "hide off level" and add the following levels:
+
+10	Heating-Thermostat		
+20	Heating-WaterTemp	 	
+30	Heating-WDC	 	
+40	Cooling-Thermostat	 	
+50	Cooling-WaterTemp	 	
+60	Cooling-WDC
 
 
 4) Edit melcloud2domoticz.sh and fill in : 
