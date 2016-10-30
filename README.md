@@ -1,4 +1,4 @@
-# Melcloud2Domoticz
+# Melcloud2Domoticz (and vice versa)
 Tool for extracting data from Melcloud to Domoticz
 
 Installation guide based on Debian
