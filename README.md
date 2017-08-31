@@ -20,6 +20,7 @@ json
 (some distro's dont have the right link to nodejs)
 
 -> ln -s /usr/bin/nodejs /usr/bin/node
+-> ln -s /usr/bin/json /usr/local/bin/json
 
 
 ## 2) Create folder and download script
