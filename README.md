@@ -11,6 +11,8 @@ curl
 
 json 
 
+(Debian 9 check https://linuxconfig.org/how-to-install-nodejs-on-debian-9-stretch-linux)
+
 -> sudo apt-get install npm
 
 -> npm install -g json
