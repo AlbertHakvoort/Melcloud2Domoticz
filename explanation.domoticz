@@ -1,0 +1,49 @@
+SetHeatFlowTemperatureZone1     
+
+  Temperature of the water when heating using the Heating-FlowTemp mode
+  
+SetCoolFlowTemperatureZone1
+
+   Temperature of the water when cooling using the Cooling-FlowTemp mode
+   
+SetTemperatureZone1
+
+    Setpoint heating when using Heating-Thermostat
+    
+OperationModeZone1
+
+    Switch between different modes (Cooling/heating/flowtemp)
+
+Power
+
+  Turn power off/on of the unit
+
+ProhibitZone1
+
+  When true the unit is not allow to heat (option can be set with a timer on the FTC main unit only)
+  
+HeatpumpStatus
+
+  Current status of the Heatpump unit ( standby / heating / cooling etc)
+
+HeatpumpActive
+
+  This switch goes on/off when the unit is running (heating/cooling/sww etc), can be used for blockys etc. Only status!
+
+EcoHotWater
+
+  When true the Eco mode for SWW is active (option can be changed on the FTC main unit only)
+
+ProhibitHotWater
+
+  When true the unit is not allow to SWW (option can be set with a timer on the FTC main unit only)
+  
+SetTankWaterTemperature
+
+  Temperature of the SWW boiler
+  
+ForcedHotWaterMode
+
+  When this swich is set to On, the Unit will (try) to force SWW heating (if allowed by the timer and ProhibitHotWater)
+  
+
