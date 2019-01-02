@@ -1,6 +1,6 @@
 # Melcloud2Domoticz 2.0.1
 
-Tool for extracting data from Melcloud to Domoticz 
+Tool for extracting data from Melcloud Ecodan to Domoticz (only 1x Air/Water unit!! Air/Air isn't working)
 
 --> !! Domoticz is leading, so changes made in Melcloud are overruled by Domoticz (next version will have 2way sync)
 
