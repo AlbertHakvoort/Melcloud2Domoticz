@@ -3,6 +3,7 @@
 Tool for extracting data from Melcloud to Domoticz 
 
 --> !! Domoticz is leading, so changes made in Melcloud are overruled by Domoticz (next version will have 2way sync)
+
 --> !! Disable any timer/scheduler in Melcloud
 
 Installation guide based on Debian
