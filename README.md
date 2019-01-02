@@ -1,4 +1,4 @@
-# Melcloud2Domoticz 
+# Melcloud2Domoticz 2.0.1
 
 Tool for extracting data from Melcloud to Domoticz 
 
