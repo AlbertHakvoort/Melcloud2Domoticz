@@ -1,5 +1,6 @@
-# Melcloud2Domoticz (and vice versa)
-Tool for extracting data from Melcloud to Domoticz
+# Melcloud2Domoticz 
+
+Tool for extracting data from Melcloud to Domoticz 
 
 Installation guide based on Debian
 
@@ -9,20 +10,9 @@ curl
 
 -> sudo apt-get update && apt-get install curl
 
-json 
+jq 
 
-(Debian 9 check https://linuxconfig.org/how-to-install-nodejs-on-debian-9-stretch-linux)
-
--> sudo apt-get install npm
-
--> npm install -g json
-
-(some distro's dont have the right link to nodejs)
-
--> ln -s /usr/bin/nodejs /usr/bin/node
-
--> ln -s /usr/bin/json /usr/local/bin/json
-
+-> sudo apt-get install jq ( or https://stedolan.github.io/jq/ )
 
 ## 2) Create folder and download script
 
@@ -38,30 +28,25 @@ chmod +x melcloud2domoticz.sh
 
 ## 3) Add the following dummy devices in Domoticz :
 
-- Create 5x dummy Temperature sensor
+- Create 3x dummy Temperature sensor
 
-IDXOUTDOORTEMP | IDXROOMTEMP | IDXHEATFLOW | IDXSWWTEMP | IDXSWWSETPOINT
+OutdoorTemperature | RoomTemperatureZone1 | TankWaterTemperature
 
-- Create 1x dummy Thermostat
+- Create 4x dummy Thermostat Setpoint
 
-IDXSETPOINT (Setpoint of the thermostat)
+SetHeatFlowTemperatureZone1 | SetCoolFlowTemperatureZone1 | SetTemperatureZone1 | SetTankWaterTemperatur
 
-- Create 1x dummy Text
+- Create 4x dummy Text
 
-IDXWPSTATUS (Shows the current status of the Unit Heating/SWW etc)
+ProhibitZone1 | HeatpumpStatus | EcoHotWater | ProhibitHotWater | 
 
 - Create 3x dummy Switch
 
-IDXWPACTIVE (Is the unit running or not, can be used for scripts etc)
-
-IDXWPERROR (Has the unit a error)
-
-IDXWPPOWER (Is the Unit on or off)
-
+HeatpumpPower | HeatpumpActive | ForcedHotWaterMode
 
 - Create 1x Dummy Level selector
 
-IDXWPMODE (change heat/cooling or thermostat/wdc)
+OperationModeZone1 (change heat/cooling or thermostat/wdc)
 
 Select "hide off level" and add the following levels:
 
@@ -70,7 +55,6 @@ Select "hide off level" and add the following levels:
 30	Heating-WDC	 	
 40	Cooling-Thermostat	 	
 50	Cooling-WaterTemp	 	
-60	Cooling-WDC
 
 
 ## 4) Edit melcloud2domoticz.sh and fill in : 
