@@ -60,7 +60,7 @@ IDXHeatpumpActive=215
 
 ## Set SWW to 0 if you're not using SWW, otherwise put 1 there
 
-SWW=0
+SWW=1
 
 #Text
 IDXEcoHotWater=206
@@ -88,6 +88,10 @@ DForcedHotWaterMode=false
 DEcoHotWater=false
 DForcedHotWaterMode=false
 DTemperatureIncrementOverride=0
+
+###########################################################################
+
+No changes are needed here below
 
 ###########################################################################
 
