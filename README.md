@@ -2,17 +2,16 @@
 
 Tool for extracting data from Melcloud to Domoticz 
 
+--> !! Domoticz is leading, so changes made in Melcloud are overruled by Domoticz (next version will have 2way sync)
+--> !! Disable any timer/scheduler in Melcloud
+
 Installation guide based on Debian
 
 ## 1) Requirements :
 
-curl
+curl and jq (https://stedolan.github.io/jq/)
 
--> sudo apt-get update && apt-get install curl
-
-jq 
-
--> sudo apt-get install jq ( or https://stedolan.github.io/jq/ )
+-> sudo apt-get install curl jq
 
 ## 2) Create folder and download script
 
@@ -64,6 +63,8 @@ Select "hide off level" and add the following levels:
 -> username&password
 
 -> Domoticz server ip and port
+
+-> path of the used programs
 
 
 ## 5) Start the script and check the output of it. Then check of the devices in Domoticz are updated.
