@@ -50,11 +50,15 @@ OperationModeZone1 (change heat/cooling or thermostat/wdc)
 
 Select "hide off level" and add the following levels:
 
-10	Heating-Thermostat		
-20	Heating-WaterTemp	 	
-30	Heating-WDC	 	
-40	Cooling-Thermostat	 	
-50	Cooling-WaterTemp	 	
+10	Heating-Thermostat
+
+20	Heating-WaterTemp
+ 	
+30	Heating-WDC
+
+40	Cooling-Thermostat
+	
+50	Cooling-WaterTemp
 
 
 ## 4) Edit melcloud2domoticz.sh and fill in : 
