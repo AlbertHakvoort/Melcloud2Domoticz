@@ -74,7 +74,7 @@ Select "hide off level" and add the following levels:
 
 ## 5) Start the script and check the output of it. Then check of the devices in Domoticz are updated.
 
-/var/bin/melcloud/melcloud2domoticz.sh
+/var/bin/melcloud/melcloud2domoticz.sh (when running as non-root user use sudo!)
 
 ## 6) If everything works fine add a job to the crontab
 
