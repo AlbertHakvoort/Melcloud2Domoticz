@@ -142,7 +142,7 @@ fi
 
 ## Check if Domoticz is online
 
-CHECKDOMOTICZ=`$CURL --max-time 9.5 --connect-timeout 9 -s "http://$SERVERIP:$PORT/json.htm?type=command&param=getversion" | $JQ '.status' -r`
+CHECKDOMOTICZ=`$CURL --max-time 5 --connect-timeout 5 -s "http://$SERVERIP:$PORT/json.htm?type=command&param=getversion" | $JQ '.status' -r`
 
 if [ "$CHECKDOMOTICZ" != "OK" ]; then
         echo "Domoticz unreachable at $SERVERIP:$PORT"
