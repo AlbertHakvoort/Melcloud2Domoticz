@@ -90,9 +90,7 @@ DForcedHotWaterMode=false
 DTemperatureIncrementOverride=0
 
 ###########################################################################
-
-No changes are needed here below
-
+#                   No changes are needed here below                      #
 ###########################################################################
 
 DATA="/bin/cat $FOLDER/.data"
