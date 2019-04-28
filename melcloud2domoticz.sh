@@ -59,6 +59,7 @@ IDXHeatpumpStatus=214
 IDXHeatpumpActive=215
 
 ## Set SWW to 0 if you're not using SWW, otherwise put 1 there
+## SWW is dutch for DHW (Domestic Hot Water)
 
 SWW=1
 
