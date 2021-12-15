@@ -80,5 +80,7 @@ Select "hide off level" and add the following levels:
 
 crontab -e
 
-  */1 * * * *   /var/bin/melcloud/melcloud2domoticz.sh
+  */2 * * * *   /var/bin/melcloud/melcloud2domoticz.sh
+  
+  (since the december 2021 firmware update the time must be changed from 1 to 2 minutes)
   
