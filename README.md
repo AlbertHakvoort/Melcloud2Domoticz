@@ -1,3 +1,13 @@
+This script is to old, please check this forum post for a updated script :
+
+https://gathering.tweakers.net/forum/view_message/78141334
+
+
+#############################################################################
+
+>>>>> Old, do NOT use anymore, Melcloud wil block your account <<<<<<
+
+
 # Melcloud2Domoticz 2.0.1
 
 Tool for extracting data from Melcloud Ecodan to Domoticz (only 1x Air/Water unit!! Air/Air isn't working)
